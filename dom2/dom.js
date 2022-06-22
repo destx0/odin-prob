@@ -18,4 +18,14 @@ blue.style.color = "blue"
 container.appendChild(blue);
 
 const box = document.createElement("div");
+// box.textContent = "dklfjdl"
+box.style.cssText = "background-color:pink; border-style:solid";
+container.appendChild(box);
+
+const indiv = document.createElement("h1");
+const inp = document.createElement("p")
+indiv.textContent = "im a div"
+inp.textContent = "ME TOO!"
+box.appendChild(indiv);
+box.appendChild(inp);
 

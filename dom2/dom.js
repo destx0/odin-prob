@@ -29,7 +29,15 @@ box.appendChild(indiv);
 box.appendChild(inp);
 
 const btn = document.querySelector("#button");
-btn.onclick = () => alert("from js");
+// btn.onclick = () => alert("from js");
 
 const btn2 = document.querySelector("#button2");
 btn2.addEventListener("click", () => alert("hello world"));
+
+function alertFunction() {
+    alert("yaya btn3")
+}
+btn.addEventListener('click', function (e) {
+    console.log(e.target);
+    e.target.style.backgroundColor = 'blue'
+  });
